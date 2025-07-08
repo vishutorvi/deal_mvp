@@ -1,0 +1,20 @@
+Deal ID: D1
+Company: Acme Corp
+Stage: Proposal Sent
+Last Updated: 2025-07-01
+
+Summary:
+Acme Corp is evaluating our cloud-based pipeline optimization solution.
+They’ve requested additional information on pricing and integration timeline.
+Key questions include:
+- Deployment timeline for a 500‑seat enterprise rollout
+- Regulatory compliance in EU regions
+- Reference implementation details
+
+Next Steps:
+1. Provide detailed pricing breakdown
+2. Schedule a technical integration call
+3. Share case studies on EU compliance
+
+Notes:
+Client emphasized tight fiscal-quarter deadlines.

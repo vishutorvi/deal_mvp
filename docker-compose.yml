@@ -1,0 +1,32 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+    networks:
+      - ollama_net
+
+  web:
+    build: .
+    container_name: dealops_mvp_web
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+    depends_on:
+      - ollama
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    networks:
+      - ollama_net
+
+volumes:
+  ollama_data:
+
+networks:
+  ollama_net:
+    driver: bridge
